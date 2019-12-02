@@ -68,8 +68,6 @@ dotnet > dotnet tool > lab
 
 asp.net core > getting started
 
-(asp.net core > ecosystem)
-
 asp.net core > vs vorlagen
 
 ### M020 LINKS
@@ -81,3 +79,5 @@ asp.net core > vs vorlagen
 ein Projekt aus der Vorlage anlegen
 
 ---
+
+(asp.net core > ecosystem)
