@@ -19,7 +19,9 @@ namespace WebApp_WebApp
         }
 
         public IConfiguration Configuration { get; }
-
+               
+        //  Startup.ConfigureServices() Diese Methode wird von der Laufzeitumgebung aufgerufen.Benutzt wird diese Methode, um Services zum Container hinzuzufügen.
+        // Mehr Infos darüber, wie man eine Anwendung konfiguriert: https://go.microsoft.com/fwlink/?LinkID=398940
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -55,9 +57,7 @@ namespace WebApp_WebApp
     }
 }
 /*
- * Startup.ConfigureServices() 
-Diese Methode wird von der Laufzeitumgebung aufgerufen. Benutzt wird diese Methode, um Services zum Container hinzuzufügen.
-Mehr Infos darüber, wie man eine Anwendung konfiguriert: https://go.microsoft.com/fwlink/?LinkID=398940
+ * 
 
 IServiceCollection spezifiziert einen Kontrakt für eine Kollektion von Service-Descriptoren.
 
