@@ -1,6 +1,35 @@
-<!-- h2 heading range 2 -->
-<h2>{{ title }}</h2>
-<!-- p - paragraph -->
-<p>{{ message }}</p>
+<div class="container">
+  <div class="row">
+    <!-- nav row start -->
 
-<router-outlet></router-outlet>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+  </div> <!-- nav row end -->
+
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- h2 heading range 2 -->
+  <h2>{{ title }}</h2>
+  <!-- p - paragraph -->
+  <p>{{ message }}</p>
+  <app-labs-overview></app-labs-overview>
+  <hr>
+  <app-todos-overview></app-todos-overview>
+  <hr>
+
+</div>
