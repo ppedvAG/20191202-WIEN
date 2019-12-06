@@ -6,6 +6,7 @@ import { DiceComponent } from './dice/dice.component';
 import { RatingComponent } from './rating/rating.component';
 import { CardComponent } from './card/card.component';
 import { DiashowComponent } from './diashow/diashow.component';
+import { HomeawayComponent } from './homeaway/homeaway.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DiashowComponent } from './diashow/diashow.component';
     DiceComponent,
     RatingComponent,
     CardComponent,
-    DiashowComponent],
+    DiashowComponent,
+    HomeawayComponent],
   imports: [
     CommonModule
   ],

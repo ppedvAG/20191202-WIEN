@@ -1,7 +1,12 @@
 <div class="container">
   <div class="row">
-    <!-- nav row start -->
+    <!-- h2 heading range 2 -->
+    <h2>{{ title }}</h2>
+    <!-- p - paragraph -->
+    <p>{{ message }}</p>
+  </div>
 
+  <div class="row">   <!-- nav row start -->
     <ul class="nav">
       <li class="nav-item">
         <a class="nav-link active" routerLink="/labs">LABS</a>
@@ -10,20 +15,9 @@
         <a class="nav-link" routerLink="/todos">TODOS</a>
       </li>
     </ul>
-
   </div> <!-- nav row end -->
 
   <div class="row">
     <router-outlet></router-outlet>
   </div>
-
-  <!-- h2 heading range 2 -->
-  <h2>{{ title }}</h2>
-  <!-- p - paragraph -->
-  <p>{{ message }}</p>
-  <app-labs-overview></app-labs-overview>
-  <hr>
-  <app-todos-overview></app-todos-overview>
-  <hr>
-
 </div>
