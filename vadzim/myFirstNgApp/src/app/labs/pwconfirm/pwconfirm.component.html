@@ -1,14 +1,24 @@
 <!-- pwconfirm.component.html -->
 
 <h2>password confirm</h2>
+<form #f="ngForm" (ngSubmit)="handleSubmit(f.value)" name="myTestForm">
+  <button type="submit">submitbutton</button>
+  <input ngModel type="password" #inp1="ngModel" [(ngModel)]="ngModelBinding" required name="inp1">
+  <input ngModel type="password" #inp2="ngModel" required name="inp2">
+  <button type="button" [disabled]="inp1.pristine || inp1.value !== inp2.value">OK</button>
 
-<input ngModel type="password" #inp1="ngModel" requiered>
-<input ngModel type="password" #inp2="ngModel" requiered>
-<button [disabled]="inp1.pristine || inp1.value !== inp2.value">OK</button>
+  <div>
+    <div *ngIf="inp1.pristine || inp1.value !== inp2.value; else eingabeOk">Die Eingaben stimmen nicht überein"</div>
+    <ng-template #eingabeOk>passt!</ng-template>
+  </div>
+  <p>Test</p>
+  <p>ausgabe der Template-Variable inp1.value</p>
+  <p>{{inp1.value}}</p>
+  <p>ausgabe der gebunden Variable</p>
+  <p>{{ngModelBinding}}</p>
+  <p>ausgabe von ngForm.value</p>
+<!--   <p>{{  ngFormValue.inp1 }}</p>
+  <p>{{  ngFormValue.inp2 }}</p> -->
 
-<div>
-  <div *ngIf="inp1.pristine || inp1.value !== inp2.value; else eingabeOk">Die Eingaben stimmen nicht überein"</div>
-  <ng-template #eingabeOk>passt!</ng-template>
-</div>
-<p>Test</p>
-<p>{{inp1.value}}</p>
+
+</form>

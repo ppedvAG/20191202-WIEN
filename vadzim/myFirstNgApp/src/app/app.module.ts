@@ -15,7 +15,6 @@ import { TodosModule } from './todos/todos.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     LabsModule,
     TodosModule
   ],

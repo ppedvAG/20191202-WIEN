@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pwconfirm.component.css']
 })
 export class PwconfirmComponent implements OnInit {
+  ngModelBinding;
+  ngFormValue;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleSubmit(argument) {
+    this.ngFormValue = argument;
   }
 
 }

@@ -1,0 +1,6 @@
+:host {
+  background-color: rgb(185, 255, 218);
+  border: thick solid black;
+  display: inline-block;
+  width: 50%;
+}
