@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from '../models/todo';
+import { TodoService } from '../todo.service';
 
 @Component({
   selector: 'app-todotable',
@@ -9,25 +10,25 @@ import { Todo } from '../models/todo';
 export class TodotableComponent implements OnInit {
   todos: Todo[]
 
-  constructor() { }
+  constructor(private tService: TodoService) { }
 
   ngOnInit() {
-    this.getTodos
+    this.getTodos();
+/*     this.getTodos
     ('https://jsonplaceholder.typicode.com/todos')
-    /* : <Todo[]> */
-    .then((array) => {
+       .then((array) => {
       this.todos = array;
-    });
+    }); */
   }
 
-  getTodos(url: string)
-   /*  : Promise<T>  */
-    {
-    return fetch(url)
-      .then(response => response.json
-       /*  <{data: T}> */
-        ())
-     /*  .then(data => data.data) */
+  getTodos(): void {
+    this.tService.getTodos()
+    .subscribe(todos => this.todos = todos);
   }
+
+  /* getTodos(url: string) {
+    return fetch(url)
+      .then(response => response.json())
+  } */
 
 }
