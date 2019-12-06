@@ -1,0 +1,14 @@
+<!-- pwconfirm.component.html -->
+
+<h2>password confirm</h2>
+
+<input ngModel type="password" #inp1="ngModel" requiered>
+<input ngModel type="password" #inp2="ngModel" requiered>
+<button [disabled]="inp1.pristine || inp1.value !== inp2.value">OK</button>
+
+<div>
+  <div *ngIf="inp1.pristine || inp1.value !== inp2.value; else eingabeOk">Die Eingaben stimmen nicht überein"</div>
+  <ng-template #eingabeOk>passt!</ng-template>
+</div>
+<p>Test</p>
+<p>{{inp1.value}}</p>

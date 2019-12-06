@@ -1,3 +1,4 @@
+/* labs.module.ts */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LabsOverviewComponent } from './labs-overview/labs-overview.component';
@@ -8,6 +9,8 @@ import { CardComponent } from './card/card.component';
 import { DiashowComponent } from './diashow/diashow.component';
 import { HomeawayComponent } from './homeaway/homeaway.component';
 import { TimerComponent } from './timer/timer.component';
+import { PwconfirmComponent } from './pwconfirm/pwconfirm.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,11 @@ import { TimerComponent } from './timer/timer.component';
     CardComponent,
     DiashowComponent,
     HomeawayComponent,
-    TimerComponent],
+    TimerComponent,
+    PwconfirmComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     LabsOverviewComponent
