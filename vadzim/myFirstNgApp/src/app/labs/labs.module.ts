@@ -7,6 +7,7 @@ import { RatingComponent } from './rating/rating.component';
 import { CardComponent } from './card/card.component';
 import { DiashowComponent } from './diashow/diashow.component';
 import { HomeawayComponent } from './homeaway/homeaway.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeawayComponent } from './homeaway/homeaway.component';
     RatingComponent,
     CardComponent,
     DiashowComponent,
-    HomeawayComponent],
+    HomeawayComponent,
+    TimerComponent],
   imports: [
     CommonModule
   ],

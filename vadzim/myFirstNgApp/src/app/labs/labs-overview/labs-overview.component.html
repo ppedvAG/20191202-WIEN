@@ -1,3 +1,4 @@
+<!-- labs-overview.component.html -->
 <h2>labs-overview</h2>
 <app-time></app-time>
 <app-dice></app-dice>
@@ -12,3 +13,7 @@
 ]"></app-diashow>
 <hr>
 <app-homeaway></app-homeaway>
+<hr>
+<app-timer [seconds]="9" (startEvent)="handleStart()" (tick)="handleTick($event)"></app-timer>
+<p>{{ startMessage }}</p>
+<p>{{ timerMessage }}</p>

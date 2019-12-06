@@ -1,3 +1,4 @@
+/* labs-overview.component.ts */
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./labs-overview.component.css']
 })
 export class LabsOverviewComponent implements OnInit {
+timerMessage: string;
+startMessage: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleStart() {
+    /* return 'Time is started'; */
+    this.startMessage = 'Time is started';
+  }
+
+  handleTick(seconds: number) {
+    // return `Remaining time: ${seconds}`;
+    this.timerMessage = `Remaining time: ${seconds}`;
   }
 
 }

@@ -1,8 +1,4 @@
 <!-- homeaway.compoment.html -->
 <h2>homeaway</h2>
 
-<div
-(mouseenter)="home()"
-(mouseleave)="away()"
-[className]="isHome ? 'home' : 'away'"
->{{this.getText()}}</div>
+<div (mouseenter)="home()" (mouseleave)="away()" [className]="isHome ? 'home' : 'away'">{{this.getText()}}</div>
