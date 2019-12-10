@@ -6,13 +6,11 @@ import { TodoService } from './todo.service';
 import { MessageService } from './message.service';
 import { EdittodoComponent } from './edittodo/edittodo.component';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [TodosOverviewComponent, TodotableComponent, EdittodoComponent],
   imports: [
     CommonModule,
-    AppRoutingModule,
     FormsModule
   ],
   exports: [
