@@ -81,3 +81,5 @@ ein Projekt aus der Vorlage anlegen
 ---
 
 (asp.net core > ecosystem)
+
+ppedv Schulung ASP.net core 
