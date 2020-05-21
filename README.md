@@ -83,3 +83,4 @@ ein Projekt aus der Vorlage anlegen
 (asp.net core > ecosystem)
 
 ppedv Schulung ASP.net core 
+http://www.ppedv.de/Schulung/Kurse/ASPNET-WebAPI-Http-REST-Hypermedia-MVC-VisualStudio-CSharp-Seminar-Training.aspx
